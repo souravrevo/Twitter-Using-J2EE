@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<script>
+function validateForm()
+{
+var x=document.forms["myForm"]["username"].value;
+if (x==null || x=="")
+  {
+  alert("First name must be filled out");
+  return false;
+  }
+}
+</script>
+</head>
+
+<body bgcolor="silver">
+<form name="myForm" action="newusr" onsubmit="return validateForm()" method="get">
+
+<p align=center>
+<img src="C:\Users\Administrator\Pictures\sam.jpg" width="200" height="200">
+</p>
+<table border="3" align=center>
+<tr>
+<td>Username : </td>
+<td><input type="text" name="username"></input></td>
+</tr>
+<tr>
+<td>Password : </td>
+<td><input type="text" name="password"></input></td>
+</tr>
+<tr>
+<td>Full Name : </td>
+<td><input type="text" name="fullname"/></td>
+</tr>
+<tr>
+<td>Email : </td>
+<td><input type="text" name="email"/></td>
+</tr>
+
+<tr>
+<td>Create Account :</td>
+<td align = center><input type="submit" name="button" value="Register" ></input></td>
+</tr>
+</table>
+
+</form>
+</body>
+
+</html>

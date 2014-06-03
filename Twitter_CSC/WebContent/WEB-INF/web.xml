@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	
+	<context-param>
+    <param-name>Driver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+  </context-param>
+  <context-param>
+    <param-name>url</param-name>
+    <param-value>jdbc:mysql://localhost:3306/sourav</param-value>
+  </context-param>
+  <context-param>
+    <param-name>username</param-name>
+    <param-value>root</param-value>
+  </context-param>
+  <context-param>
+    <param-name>password</param-name>
+    <param-value>root</param-value>
+  </context-param>
+	
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servlet1</servlet-name>
+    <servlet-class>pack.servlet1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>follow</servlet-name>
+    <servlet-class>pack.follow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>followprecheck</servlet-name>
+    <servlet-class>pack.followprecheck</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>logout</servlet-name>
+    <servlet-class>pack.logout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>newusr</servlet-name>
+    <servlet-class>pack.newusr</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>servlet2</servlet-name>
+    <servlet-class>pack.servlet2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>unfollow</servlet-name>
+    <servlet-class>pack.unfollow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>update</servlet-name>
+    <servlet-class>pack.update</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>follow</servlet-name>
+    <url-pattern>/follow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>followprecheck</servlet-name>
+    <url-pattern>/followprecheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>newusr</servlet-name>
+    <url-pattern>/newusr</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>servlet2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>unfollow</servlet-name>
+    <url-pattern>/unfollow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>update</servlet-name>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>page.html</welcome-file>
+  </welcome-file-list>
+</web-app>
